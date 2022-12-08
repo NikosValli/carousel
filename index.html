@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwlCarousel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 child1">
+                <h5 class="subtitle">New</h5>
+                <h1 class="title">Featured Products</h1>
+                <p class="description">Mauris imperdiet orci dapibus commodo libero nec, interdum tortorbi amet et
+                    magna.
+                </p>
+                <div class="owl-nav">
+                    <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous"><span
+                                class="lnr lnr-arrow-left"></span></span></button>
+                    <button type="button" role="presentation" class="owl-next"><span aria-label="Next"><span
+                                class="lnr lnr-arrow-right"></span></span></button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-8 child2">
+                <div class="owl-carousel ">
+                    <div class="item">
+                        <img src="C:\Users\nikos val\Desktop\oliveoil.jpg">
+                        <div class="product-content">
+                            <h5 class="product-title">{Product title}</h5>
+                            <span class="product-price">$ {Product price}</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="C:\Users\nikos val\Desktop/oliveoil.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="C:\Users\nikos val\Desktop/oliveoil.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="C:\Users\nikos val\Desktop/oliveoil.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="C:\Users\nikos val\Desktop/oliveoil.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="C:\Users\nikos val\Desktop/oliveoil.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="C:\Users\nikos val\Desktop/oliveoil.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            stagePadding: 0,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 4
+                },
+                1920: {
+                    items: 4
+                },
+
+            },
+
+        })
+    </script>
+
+    <script type="text/javascript">
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        $('.owl-next').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.owl-prev').click(function () {
+            owl.trigger('prev.owl.carousel');
+        })
+    </script>
+</body>
+
+</html>
